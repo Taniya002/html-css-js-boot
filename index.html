@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+ 
+  <style>
+    
+    .hello{
+      text-decoration:none ;
+      color:teal;
+      font-size: 50px;
+    }
+    .hello a:hover{
+      color:rgb(157, 48, 48);
+    }
+    .navbar{
+      color:rgb(157, 48, 48);
+      text-decoration: none;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+ 
+    }
+    .navbar a:hover{
+      color:teal;
+    }
+    .food {
+      color:thistle;
+      display:flex;
+    
+    }
+    .food a:hover{
+      color:teal;
+    }
+    h1{
+      color:teal;
+      
+   
+      
+    }
+    p{
+      text-align: center;
+    }
+    
+    .tribute{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+    max-width:78rem;
+    background-color:white;
+    color:black;
+    align-items: center;
+    padding:0px 0px 0px 1re
+    
+}
+.tribute blockquote{
+    text-align: center;
+    font-size: 2rem;
+}
+.logo{
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo i{
+   color:black;
+   font-size:28px;
+   
+   display:flex;
+}
+h2{
+  color:teal;
+  text-align: center;
+}
+.cont a{
+  color:black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding:5px 0px;
+  margin:0px 30px;
+  transition:all .50s ease;
+  text-decoration: none;
+} 
+.cont i{
+  color:black;
+   font-size:28px;
+   display:flex;
+   text-decoration: none;
+}
+
+.cont{
+  display:flex;
+  text-decoration: none;
+}
+.cont a:hover{
+  color:white;
+}
+.cont li{
+  list-style: none;
+}
+.bio{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.bio{
+  color:white;
+   background-color:rgb(157, 48, 48);
+}
+.serch{
+            float:right;
+            color:teal;
+            padding: 12px 75px;
+        }
+        .nav input:active{
+            background-color: teal;
+        }
+        .nav input{
+            border: 2px solid tan;
+            border-radius: 7px;
+            padding :3px 17px;
+            width: 129px;
+        }
+        *{
+          margin:0;
+          padding:0;
+          box-sizing: border-box;
+        }
+        .container{
+          max-width: 1070px;
+          
+          margin:auto;
+        }
+        ul{
+          list-style:none;
+          text-decoration: none;
+        }
+        li{
+          text-decoration: none;
+        }
+        .row{
+          display:flex;
+          flex-wrap: wrap;
+        }
+        .footer{
+          background-color: rgb(157, 48, 48);
+          padding:70px 0;
+        }
+        .footer-col{
+          width:25%;
+          padding: 0 15px;
+        }
+        .footer-col h4{
+          font-size: 18px;
+          color:gray;
+          text-transform:capitalize;
+          margin-bottom: 30px;
+          position:relative;
+        }
+        .footer-col h4::before{
+          content:'';
+          position: absolute;
+          left:0;
+          bottom:-10px;
+          background-color:rgb(103, 75, 75);
+          height:2px;
+          box-sizing: border-box;
+          width:50px;
+        }
+        .footer-col ul li a{
+          font-size:16px;
+          text-transform: capitalize;
+          color:rgb(225, 142, 142);
+          text-decoration: none;
+          font-weight: 300%;
+          display: block;
+        }
+        .footer-col ul li a:hover{
+          color:rgb(94, 149, 149);
+          padding-left:10px;
+        }
+        .footer-col .social-links a i{
+          display:inline-block;
+          height:400px;
+          width: 400px;
+         background-color:gray;
+          text-decoration: none;
+          line-height: 400px;
+          text-align: center;
+        }
+  </style>
+  </head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a href="#" class="hello" ><i class="ri-cake-3-line"></i></a>
+              <div class="food">
+                
+                
+              </div>
+            
+              
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">menu</a></li>
+                      <li><a class="dropdown-item" href="#"></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">menu</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://img.rawpixel.com/private/static/images/website/2022-05/px1369813-image-kwvxxp91.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fffc03ba9aaa6a55c5e803700a96684b" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80"  class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="https://image.slidesdocs.com/responsive-images/background/fabric-poster-food-snack-gourmet-shading-pasta-spices-powerpoint-background_65674160bc__960_540.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+              </header>
+          </body>
+          </html>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </header>
+        <section class="tribute">
+         
+          <blockquote>
+            <h1>About us</h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam ad quas aspernatur culpa sed possimus tenetur consequuntur, similique fuga.
+              
+          </blockquote>
+          
+          <img src="https://us.123rf.com/450wm/alexkava/alexkava2005/alexkava200500056/147965729-chef-woman-design-with-dish-in-hand-isolated-on-white-background.jpg?ver=6">
+          <h1>Follow us</h1>
+          <ul class="cont">
+            <li><a href="#" ></a><i class="ri-instagram-fill"></i></a></li>
+            <li><a href="#"></a><i class="ri-linkedin-box-fill"></i></li>
+            <li><a href="#"></a><i class="ri-facebook-circle-fill"></i></li>
+            <li><a href="#"> </a><i class="ri-twitter-fill"></i></li>
+           
+          </ul>
+          
+         
+        
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>Contact us</h4>
+                <ul>
+                  <li><a href="#">+234567778</a></li>
+                  <li><a href="#">food@gmail.com</a></li>
+                  
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4> Get help</h4>
+                <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">shipping</a></li>
+                  <li><a href="#"> ordes status</a></li>
+                  <li><a href="#">payment options</a></li>
+                 
+                 
+
+                 
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Follow us</h4>
+                <ul>
+                  <div class="social links">
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                  <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                  <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                </div>
+                    </ul>
+                  </div>
+
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </body>
+      </html>
+          
+          

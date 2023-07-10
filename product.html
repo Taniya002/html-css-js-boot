@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+ 
+
+<style>
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    color:white;
+    --text-color:#fff;
+    --main-color:29fd53;
+}
+body{
+  min-height: 100vh;
+  background:var(--bg-color);
+  /*color: var(--text-color);*/
+
+}
+header{
+   position:fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:transparent;
+    padding:28px 12%;
+    transition:all .50s ease;
+}
+.logo{
+  display:flex;
+  align-items: center;
+}
+.logo i{
+   color:teal;
+   font-size:28px;
+   margin-left: 3px;
+}
+.navbar{
+  display:flex;
+}
+.navbar a{
+  color:rgb(191, 57, 57);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding:5px 0px;
+  margin:0px 30px;
+  transition:all .50s ease;
+} 
+.navbar a:hover{
+  color:teal;
+
+}
+.navbar a.active{
+  color:teal;
+}
+.main{
+  display:flex;
+  align-items: center;
+}
+.main a{
+  padding: 6px;
+  font-size:1.1rem;
+  color:teal;
+  font-weight: 500;
+}
+.user {
+   display: flex;
+   align-items: center;
+}
+.user i{
+  color:teal;
+  font-size:28px;
+ 
+}
+.main a:hover{
+  color:rgb(191, 57, 57);
+}
+#menu-icon{
+  
+  color:rgb(191, 57, 57);
+}
+</style>
+
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><i class="ri-home-7-fill"></i></a>
+    <ul class="navbar">
+      <li><a href="#" class="active">home</a></li>
+      <li><a href="#">about us</a></li>
+      <li><a href="#">services</a></li>
+      <li><a href="#">blog</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">Offers</a></li>
+    </ul>
+    <div class="main">
+      <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+      <a href="#">Register</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+</header>
+
+ <!--js link-->
+ <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
